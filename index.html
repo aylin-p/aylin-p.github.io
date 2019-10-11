@@ -9,16 +9,20 @@
        body {
          margin: 0;
          font-family: 'Montserrat', sans-serif;
+         color: #222127;
        }
        h1 {
-         font-size: 40px;
+         font-size: 50px;
+         color: #222127;
        }
        .light {
-         background-color: #fefefe;
+         background-color: ##f0efed;
          color: #201736;
        }
        .dark {
-         background-color: #201736;
+         -background-color: #c6c120;
+         -background-color: #84aeb0;
+         background-color: #6d868a;
          color: #fefefe;
        }
        .section {
@@ -26,10 +30,22 @@
        }
        .container {
          width: 1020px;
+         height: 300px;
          margin: 0 auto;
        }
+
+       .stripe {
+         width: 1020px;
+         margin: 0 auto;
+       }
+
        @media (max-width: 1020px) {
          .container {
+           width: auto;
+           margin: 0 32px;
+         }
+
+         .stripe {
            width: auto;
            margin: 0 32px;
          }
@@ -46,9 +62,8 @@
      .profile-pic {
        float: left;
        margin-right: 24px;
-       max-width: 99%;
-       height: 200px;
-       weight: 206px;
+       max-width:90%;
+       max-height:90%;
      }
      .name {
        margin: 0 0 16px 0;
@@ -115,7 +130,7 @@
         <img src="images/my_face.PNG" class="image profile-pic" />
         <h1 class="name">Aylin Perez</h1>
         <p class="copy">
-          Don't text me, tell it straight to my face
+          “Perfectionism prevents us from taking double steps in our career. We think we have to be perfect, but we don’t.” - Reshma Saujani
         </p>
         <div style="color: #CC8D6F;">
           <a href="https://www.linkedin.com/in/aylin-perez/" class="social-button">
@@ -126,9 +141,13 @@
           /></a>
           <a href="mailto:aylinperez131@gmail.com" class="social-button">
             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgLjAyYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02Ljk5IDYuOThsLTYuOTkgNS42NjYtNi45OTEtNS42NjZoMTMuOTgxem0uMDEgMTBoLTE0di04LjUwNWw3IDUuNjczIDctNS42NzJ2OC41MDR6Ii8+PC9zdmc+"></a>
-
         </div>
       </div>
     </header>
+    <main class="section dark">
+      <div class="stripe">
+        <p class="copy">Here's what I've been up to recently.</p>
+      </div>
+    </main>
   </body>
 </html>
